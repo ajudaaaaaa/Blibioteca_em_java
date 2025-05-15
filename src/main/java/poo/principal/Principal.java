@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Principal {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Biblioteca biblioteca = new Biblioteca(); // Só usamos para livro e usuário por enquanto
+        Biblioteca biblioteca = new Biblioteca(); 
 
         while (true) {
             System.out.println("\n--- Menu ---");
@@ -18,7 +18,7 @@ public class Principal {
             System.out.println("0. Sair");
             System.out.print("Escolha: ");
             int opcao = sc.nextInt();
-            sc.nextLine(); // limpar buffer
+            sc.nextLine();
 
             switch (opcao) {
                 case 1:

@@ -38,7 +38,7 @@ public class Livro {
         this.disponivel = disponivel;
     }
 
-    // Sobrescrevendo toString() sem usar @Override
+ 
     public String toString() {
         return titulo + " - " + autor + " (" + ano + ")"
              + " | ISBN: " + isbn
