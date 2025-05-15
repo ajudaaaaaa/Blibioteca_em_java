@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Principal {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Biblioteca biblioteca = new Biblioteca();
+        Biblioteca biblioteca = new Biblioteca(); // Só usamos para livro e usuário por enquanto
 
         while (true) {
             System.out.println("\n--- Menu ---");
@@ -13,10 +13,12 @@ public class Principal {
             System.out.println("3. Emprestar Livro");
             System.out.println("4. Listar Livros");
             System.out.println("5. Listar Usuários");
+            // System.out.println("6. Cadastrar Administrador"); // ainda não implementado
+            // System.out.println("7. Listar Administradores"); // ainda não implementado
             System.out.println("0. Sair");
             System.out.print("Escolha: ");
             int opcao = sc.nextInt();
-            sc.nextLine();
+            sc.nextLine(); // limpar buffer
 
             switch (opcao) {
                 case 1:
@@ -62,3 +64,4 @@ public class Principal {
         }
     }
 }
+
